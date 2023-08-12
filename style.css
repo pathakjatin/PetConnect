@@ -17,10 +17,28 @@
     text-align: center;
     margin-top: 3%;
 }
-/* .vl{
-    border-left: 6px white;
-    height: 500px;
-} */
+#vl{
+    padding-top: 30px;
+    height: 200px;
+    border-right: 1px solid rgb(0, 0, 0);
+    margin-right: 50%;
+    margin-top: 5%;
+} 
+.container{
+    display: flex;
+}
+.dog{
+    margin-left: 45px;
+    height: 400px;
+    width: 350px;
+    background-color: aqua;
+}
+.cat{
+    margin-left: 45%;
+    height: 400px;
+    width: 350px;
+    background-color:aquamarine
+}
 .divider2{
     color: #DAAD86;
 }

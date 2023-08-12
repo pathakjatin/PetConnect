@@ -1,0 +1,26 @@
+.blue{
+    background-color: #659DBD;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: #BAB86C;
+}
+.header {
+    margin-top: 5%;
+    padding: 26px;
+    background-color:white;
+}
+.text1{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3%;
+}
+/* .vl{
+    border-left: 6px white;
+    height: 500px;
+} */
+.divider2{
+    color: #DAAD86;
+}

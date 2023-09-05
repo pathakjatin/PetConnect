@@ -1,5 +1,9 @@
-.blue{
+body{
     background-color: #659DBD;
+    background-image: url("forest.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -8,22 +12,16 @@
     color: #BAB86C;
 }
 .header {
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 26px;
     background-color:white;
+    opacity: 90%;
 }
 .text1{
     font-size: x-large;
     text-align: center;
     margin-top: 3%;
 }
-#vl{
-    padding-top: 30px;
-    height: 200px;
-    border-right: 1px solid rgb(0, 0, 0);
-    margin-right: 50%;
-    margin-top: 5%;
-} 
 .container{
     display: flex;
 }
@@ -32,16 +30,59 @@
     height: 400px;
     width: 350px;
     background-color: aqua;
+    opacity: 0%;
 }
 .cat{
     margin-left: 45%;
     height: 400px;
     width: 350px;
-    background-color:aquamarine
+    background-color:aquamarine;
+    opacity: 0%;
 }
 .divider2{
     color: #DAAD86;
 }
 .center{
+    text-align: right;
+    background-color: #333;
+    padding: 26px;
+    overflow: hidden;
+    border-radius: 28px;
+    font-size: large;
+}
+.right{
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 8%;
+}
+.content{
+    background-color: whitesmoke;
+    opacity: 90%;
+    border-radius: 28px;
+}
+.navigate{
+    margin-top: 3%;
+    padding: 6px;
+    background-color:black;
+    opacity: 90%;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
     text-align: center;
+    font-size: larger;
+    float: left;
+    color: white;
+} 
+footer a{
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+    float: left;
+    color: white;
 }

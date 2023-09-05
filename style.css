@@ -24,20 +24,122 @@ body{
 }
 .container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .dog{
-    margin-left: 45px;
-    height: 400px;
-    width: 350px;
-    background-color: aqua;
-    opacity: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #659DBD;
+    border-radius: 20px;
 }
 .cat{
-    margin-left: 45%;
-    height: 400px;
-    width: 350px;
-    background-color:aquamarine;
-    opacity: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #659DBD;
+    border-radius: 20px;
+}
+.fish{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #659DBD;
+    border-radius: 20px;
+}
+.dog-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("dog.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cat-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("cat.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.fish-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("fish.jpeg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.dog p{
+    padding: 10px;
+}
+.cat p{
+    padding: 10px;
+}
+.fish p{
+    padding: 10px;
+}
+.dog h2{
+    text-align: center;
+}
+.cat h2{
+    text-align: center;
+}
+.fish h2{
+    text-align: center;
+}
+.dog a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.cat a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.fish a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.dog:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.cat:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.fish:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
 }
 .divider2{
     color: #DAAD86;
@@ -57,7 +159,7 @@ body{
 }
 .content{
     background-color: whitesmoke;
-    opacity: 90%;
+    opacity: 100%;
     border-radius: 28px;
 }
 .navigate{

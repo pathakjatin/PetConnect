@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    position: absolute;
 }
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -19,41 +20,26 @@ body{
 }
 .text1{
     font-size: x-large;
-    text-align: center;
-    margin-top: 3%;
+    top: 370px;
+    left: 600px;
+    position: absolute;
+    z-index: 55;
 }
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.dog{
+.card{
     box-sizing: border-box;
     padding: 0;
-    margin: 20px;
+    margin: 50px;
     width: 290px;
     height: 510px;
     background-color: #659DBD;
     border-radius: 20px;
 }
-.cat{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 20px;
-    width: 290px;
-    height: 510px;
-    background-color: #659DBD;
-    border-radius: 20px;
-}
-.fish{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 20px;
-    width: 290px;
-    height: 510px;
-    background-color: #659DBD;
-    border-radius: 20px;
-}
+
 .dog-image{
     height: 190px;
     margin-bottom: 15px;
@@ -75,25 +61,13 @@ body{
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
-.dog p{
+.card p{
     padding: 10px;
 }
-.cat p{
-    padding: 10px;
-}
-.fish p{
-    padding: 10px;
-}
-.dog h2{
+.card h2{
     text-align: center;
 }
-.cat h2{
-    text-align: center;
-}
-.fish h2{
-    text-align: center;
-}
-.dog a{
+.card a{
     background-color: black;
     color: white;
     text-decoration: none;
@@ -102,39 +76,8 @@ body{
     text-align: center;
     margin: 2px 60px;
 }
-.cat a{
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 2px 60px;
-}
-.fish a{
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 2px 60px;
-}
-.dog:hover{
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 1s ease;
-}
-.cat:hover{
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 1s ease;
-}
-.fish:hover{
+
+.card:hover{
     background-color: rgb(62, 62, 62);
     color: white;
     cursor: pointer;
@@ -158,17 +101,24 @@ body{
     margin-right: 8%;
 }
 .content{
-    background-color: whitesmoke;
-    opacity: 100%;
+    padding-top: 5px;
+    height: 900px;
+    width: 1515px;
+    position: relative;
+    background-image: url("forest.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 25;
+    border: 3px solid black;
     border-radius: 28px;
 }
-.navigate{
+nav {
     margin-top: 3%;
     padding: 6px;
     background-color:black;
     opacity: 90%;
-}
-nav {
     background-color: #333;
     overflow: hidden;
 }
@@ -187,4 +137,19 @@ footer a{
     font-size: large;
     float: left;
     color: white;
+}
+.z{
+    height: 800px;
+    width: 1415px;
+    bottom: 800px;
+    position: relative;
+    left: 55px;
+    z-index: 50;
+}
+.demo{
+    background-color: #333;
+    color: white;
+    font-size: large;
+    position: absolute;
+    top: 1280px;
 }

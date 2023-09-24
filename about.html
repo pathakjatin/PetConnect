@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Skranji&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
@@ -31,15 +37,15 @@
 
     .header {
         margin-top: 2%;
-        padding: 26px;
+        padding: 20px;
         background-color: white;
         opacity: 90%;
     }
 
     .title {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Croissant One', cursive;
         text-align: center;
-        font-size: x-large;
+        font-size: 30px;
         color: #BAB86C;
     }
 
@@ -53,6 +59,7 @@
     }
 
     .navbar {
+        font-family: 'Skranji', cursive;
         background-color: white;
         opacity: 0.95;
         margin-top: 20px;
@@ -64,7 +71,7 @@
 
     .button-about-us{
         padding: 15px 70px 15px 70px;
-        margin: 18px 50px 18px 15px;
+        /* margin: 18px 50px 18px 15px; */
         font-size: 25px;
         text-decoration: none;
         list-style: none;
@@ -96,7 +103,34 @@
         position: right;
         
     }
-
+    .navbar ul li a{
+        text-decoration: none;
+        padding: 8px;
+        font-size: 25px;
+    }
+    .navbar ul li{
+        display: inline-block;
+    }
+    .container{
+        width: 70vw;
+        height: 100vh;
+    }
+    .image1{
+        position: relative;
+        left: 5vw;
+        top: 25vh;
+    }
+    .content1{
+        font-family: 'Skranji', cursive;
+        position: relative;
+        left: 25vw;
+        bottom: 35vh;
+        font-size: 25px;
+        color:#d9d20d;
+    }
+    .content1 ul li p{
+        padding: 7px 0px 7px 0px;
+    }
 </style>
 
 <body>
@@ -107,27 +141,39 @@
     </div>
 
     <div class="navbar">
-        <a class="button-about-us" >About Us</a>
-        <a class="button">Aim</a>
-        <a class="button">Inspiration</a>
-        <a class="button">Motivation</a>
+        <ul>
+            <li><a class="button-about-us">Introduction</a></li>
+            <li><a class="button">Problems</a></li>
+            <li><a class="button">Solutions</a></li>
+            <li><a class="button">Scope of Project</a></li>
+        </ul>
     </div>
 
     <section class="content">
-        <div class="content" id="content1">
-            
+        <div class="container">
+            <div class="image1">
                 <img class="aim" src="img1.jpg" >
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repellat! Doloremque omnis enim debitis
-                laborum in veritatis, esse excepturi, accusamus ipsa, alias odit aliquid. Et laboriosam aperiam repellat
-                quia perferendis suscipit facilis nulla sapiente dolorem. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Vitae velit corrupti incidunt vero dolores doloribus recusandae quisquam quibusdam
-                reiciendis! Quibusdam culpa iure animi quas quo consequuntur blanditiis labore maiores atque id? Quia
-                doloremque ducimus minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam natus soluta
-                velit facere numquam, odit reprehenderit eos veritatis commodi et quidem iusto totam incidunt
-                reiciendis? Repellendus blanditiis placeat suscipit iusto consectetur, ullam praesentium asperiores.
-                Dolorum fugiat aperiam sequi illum recusandae veritatis blanditiis deleniti, tempore reprehenderit.
-                Obcaecati cupiditate dolorem laudantium consectetur! </p>
+            </div>
+            <div class="content1">
+                <ul>
+                    <li>
+                        <p>
+                            With the increasing number of pet lovers around the world, there is a growing demand for a centralized platform that offers trustworthy information on pet care, nutrition, and other essential aspects of pet ownership.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            PetConnect aims to fill this void by providing expert-approved tips, balanced diet recommendations, and easy access to nearby pet shops, all in one convenient location. Our dedication to fostering a community of pet enthusiasts will ensure that valuable knowledge is shared among fellow pet owners
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            PetConnect provides a wealth of resources on pet health, enabling pet owners to spot early signs of illness and make informed decisions about their pets' care. Additionally, users can find guidance on when to seek professional veterinary assistance.
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="content">

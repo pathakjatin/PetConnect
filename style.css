@@ -11,24 +11,67 @@ body{
     text-align: center;
     font-size: 30px;
     color: #BAB86C;
+    /* color: transparent;
+    background-image: url("C:\Users\HP\Desktop\PetConnect\dog.html");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text; */
 }
+/* h1{
+    color: transparent;
+    background-image: url("C:\Users\HP\Desktop\PetConnect\dog.html");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+} */
 .header {
     margin-top: 2%;
     padding: 20px;
     background-color:white;
     opacity: 90%;
 }
+button li a{
+    color: rgb(169, 158, 0);
+    font-family: 'Skranji', cursive;;
+}
+button{
+    background-color: #ecfd00;
+    border: 0px;
+}
+button::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(53, 192, 53);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+button:hover::after{
+    transform: scaleX(1);
+}
 .text1{
-    font-size: x-large;
+    color: rgb(224, 239, 12);
+    font-size: 6vh;
     top: 370px;
     left: 600px;
     position: absolute;
+    font-weight: 100;
     z-index: 55;
+    display: inline-block;
+    top: 45vh;
+    justify-content: center;
+    left: 30vw;
 }
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    top: 55px;
+    position: absolute;
+    left: 8vw;
 }
 .card{
     box-sizing: border-box;
@@ -102,7 +145,7 @@ body{
 }
 .content{
     padding-top: 5px;
-    height: 900px;
+    height: 890px;
     width: 1515px;
     position: relative;
     background-image: url("forest.jpg");

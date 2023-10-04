@@ -21,8 +21,8 @@
     }
 
     .content {
-        background-color: white;
-        opacity: 85%;
+        /* background-color: white; */
+        /* opacity: 85%; */
         border-radius: 9px;
         font-size: large;
         margin-top: 50px;
@@ -99,10 +99,6 @@
         background-color:  rgb(65, 235, 82);
         color: white;
     }
-    .aim{
-        position: right;
-        
-    }
     .navbar ul li a{
         text-decoration: none;
         padding: 8px;
@@ -112,24 +108,53 @@
         display: inline-block;
     }
     .container{
-        width: 70vw;
-        height: 100vh;
+        display: grid;
+        /* background-color: white; */
+        /* width: 100vw;
+        height: 100vh; */
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        /* align-content: space-around; */
     }
     .image1{
         position: relative;
-        left: 5vw;
-        top: 25vh;
+        left: 2vw;
+        top: 6vh;
+        border: 2px solid black;
+        height: 394px;
     }
     .content1{
+        border: 2px solid #333;
+        border-radius: 45px;
+        background-color: #333;
         font-family: 'Skranji', cursive;
         position: relative;
-        left: 25vw;
-        bottom: 35vh;
+        left: 5vw;
+        bottom: 0vh;
         font-size: 25px;
         color:#d9d20d;
     }
     .content1 ul li p{
         padding: 7px 0px 7px 0px;
+    }
+    .image2{
+        position: relative;
+        left: 0.5vw;
+        top: 18vh;
+        border: 2px solid black;
+        height: 394px;
+    }
+    .content2{
+        border: 2px solid #333;
+        border-radius: 45px;
+        background-color: #333;
+        font-family: 'Skranji', cursive;
+        position: relative;
+        left: 0.5vw;
+        bottom: 0vh;
+        font-size: 25px;
+        color:#d9d20d;
     }
 </style>
 
@@ -142,66 +167,66 @@
 
     <div class="navbar">
         <ul>
-            <li><a class="button-about-us">Introduction</a></li>
-            <li><a class="button">Problems</a></li>
-            <li><a class="button">Solutions</a></li>
-            <li><a class="button">Scope of Project</a></li>
+            <li><a class="button-about-us" href="#introduction">Introduction</a></li>
+            <li><a class="button" href="#problem">Problems</a></li>
+            <li><a class="button" href="solution">Solutions</a></li>
+            <li><a class="button" href="scope">Scope of Project</a></li>
         </ul>
     </div>
-
-    <section class="content">
-        <div class="container">
+    <div class="container">
             <div class="image1">
-                <img class="aim" src="img1.jpg" >
+                <img class="aim" src="img1.jpg">
             </div>
             <div class="content1">
                 <ul>
                     <li>
                         <p>
-                            With the increasing number of pet lovers around the world, there is a growing demand for a centralized platform that offers trustworthy information on pet care, nutrition, and other essential aspects of pet ownership.
+                            With the increasing number of <a name="introduction">pet</a> lovers around the world, there is a growing demand for a <br> centralized platform that offers trustworthy information on pet care, nutrition, and other essential<br> aspects of pet ownership.
                         </p>
                     </li>
                     <li>
                         <p>
-                            PetConnect aims to fill this void by providing expert-approved tips, balanced diet recommendations, and easy access to nearby pet shops, all in one convenient location. Our dedication to fostering a community of pet enthusiasts will ensure that valuable knowledge is shared among fellow pet owners
+                            PetConnect aims to fill this void by providing expert-approved tips, balanced diet recommendations <br> and easy access to nearby pet shops, all in one convenient location. Our dedication to fostering a community of pet enthusiasts will ensure that valuable knowledge is shared among fellow pet<br> owners
                         </p>
                     </li>
                     <li>
                         <p>
-                            PetConnect provides a wealth of resources on pet health, enabling pet owners to spot early signs of illness and make informed decisions about their pets' care. Additionally, users can find guidance on when to seek professional veterinary assistance.
-
+                            PetConnect provides a wealth of resources on pet health, enabling pet owners to spot early signs <br>of illness and make informed decisions about their pets' care. Additionally, users can find guidance<br> on when to seek professional veterinary assistance.
                         </p>
                     </li>
                 </ul>
             </div>
         </div>
-    </section>
-    <section class="content">
-        <div class="content" id="content2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repellat! Doloremque omnis enim debitis
-                laborum in veritatis, esse excepturi, accusamus ipsa, alias odit aliquid. Et laboriosam aperiam repellat
-                quia perferendis suscipit facilis nulla sapiente dolorem. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Vitae velit corrupti incidunt vero dolores doloribus recusandae quisquam quibusdam
-                reiciendis! Quibusdam culpa iure animi quas quo consequuntur blanditiis labore maiores atque id? Quia
-                doloremque ducimus minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat harum
-                accusamus aut aspernatur non mollitia tempore neque minus impedit doloremque animi eius quasi nam eos
-                autem maiores totam obcaecati eaque velit, similique debitis dignissimos tempora. Eveniet optio unde
-                soluta quo culpa sunt debitis magni minima officiis, dolores vel id! </p>
+    <div class="container">
+        <div class="image2">
+            <img src="img4.jpg" class="prob">
         </div>
-    </section>
-    <section class="content">
-        <div class="content" id="content3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repellat! Doloremque omnis enim debitis
-                laborum in veritatis, esse excepturi, accusamus ipsa, alias odit aliquid. Et laboriosam aperiam repellat
-                quia perferendis suscipit facilis nulla sapiente dolorem. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Vitae velit corrupti incidunt vero dolores doloribus recusandae quisquam quibusdam
-                reiciendis! Quibusdam culpa iure animi quas quo consequuntur blanditiis labore maiores atque id? Quia
-                doloremque ducimus minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vitae
-                voluptate magnam repellat quaerat ipsam? Adipisci ratione totam modi deserunt est eveniet hic atque id,
-                neque enim fugiat illum omnis porro ab cumque officiis voluptatibus dignissimos nam expedita error,
-                libero commodi ullam aperiam? Earum unde doloremque optio at labore dicta! </p>
+        <div class="content2">
+            <ul>
+                <li>
+                    <p>
+                        Lack of Reliable Information: Pet <a name="problem">owners</a> often struggle to find accurate and trustworthy <br>information on pet care, leading to confusion and potential health risks for their animals
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Balanced Diet Dilemmas: Providing a balanced and appropriate diet for different pet species can <br>be challenging, especially for first-time pet owners who may not be aware of specific <br>nutritional needs.
+                    </p>
+                </li>
+                <li>
+                    Finding Reputable Pet Shops: Locating reliable pet shops, offering quality products and services, <br>can be difficult, especially for new pet owners or those who have recently moved to a new area.
+                </li>
+                <li>
+                    <p>
+                        According to PDSA more than 18 million pets are at a risk of dying early because of poor<br> diets which includes takeaways , crisps and cakes, these potentially life threatening meals can <br>lead to arthritis, diabetes and heart diseases among pets
+                    </p>
+                </li>
+                <li>
+                    <p>"Pet obesity poses not only major health risks such as diabetes, arthritis and heart disease but sadly <br> also means daily misery for millions of pets who are feeling the strain from carrying too much <br>weight," said PDSA senior veterinary surgeon Elaine Pendlebury.Owners of seriously or terminally<br> ill pets are more likely to suffer with stress and symptoms of depression and anxiety, as well as <br>poorer quality of life, compared with owners of healthy animals, finds a study published<br> by Veterinary Record today.</p>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
     <footer>
         <p class="right">Copyright &copy; | Team PetConnect</p>
     </footer>

@@ -156,7 +156,82 @@
         font-size: 25px;
         color:#d9d20d;
     }
-</style>
+    .diet{
+        border: 2px solid black;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        top: 5vh;
+        left: 72.5vw;
+    }
+    .content3{
+        border: 2px solid #333;
+        border-radius: 45px;
+        background-color: #333;
+        font-family: 'Skranji', cursive;
+        position: relative;
+        left: -26.5vw;
+        bottom: 0vh;
+        font-size: 25px;
+        color:#d9d20d;
+    }
+    .scope{
+        border: 2px solid black;
+        height: 400px;
+        width: 650px;
+        left: 10vw;
+        position: relative;
+    }
+    .content4{
+        border: 2px solid #333;
+        border-radius: 45px;
+        background-color: #333;
+        font-family: 'Skranji', cursive;
+        position: relative;
+        left: -3.5vw;
+        bottom: 0vh;
+        font-size: 25px;
+        color:#d9d20d;
+    }
+    .content5{
+        border: 2px solid #333;
+        border-radius: 45px;
+        background-color: #333;
+        font-family: 'Skranji', cursive;
+        position: relative;
+        left: 1vw;
+        bottom: 0vh;
+        font-size: 25px;
+        color:#d9d20d;
+    }
+    .invisible{
+        visibility: hidden;
+    }
+    .button-top{
+        display: inline-block;
+        /* background-color: #ecfd00; */
+        border: 0px;
+        text-decoration: none;
+        font-size: 45px;
+        color:#d9d20d;
+    }
+    .button-top::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(53, 192, 53);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+    }
+    .button-top:hover::after{
+    transform: scaleX(1);
+    }
+    .button-top a{
+        text-decoration: none;
+    }
+    </style>
 
 <body>
     <div class="header">
@@ -169,8 +244,9 @@
         <ul>
             <li><a class="button-about-us" href="#introduction">Introduction</a></li>
             <li><a class="button" href="#problem">Problems</a></li>
-            <li><a class="button" href="solution">Solutions</a></li>
-            <li><a class="button" href="scope">Scope of Project</a></li>
+            <li><a class="button" href="#solution">Solutions</a></li>
+            <li><a class="button" href="#scope">Scope of Project</a></li>
+            <li><a class="invisible" name="top">Top</a></li>
         </ul>
     </div>
     <div class="container">
@@ -197,9 +273,10 @@
                 </ul>
             </div>
         </div>
+        <hr>
     <div class="container">
         <div class="image2">
-            <img src="img4.jpg" class="prob">
+            <img src="img2.jpg" class="prob">
         </div>
         <div class="content2">
             <ul>
@@ -227,6 +304,67 @@
             </ul>
         </div>
     </div>
+    <hr>
+    <div class="container">
+        <div class="image3">
+            <img src="img3.jpg" class="diet">
+        </div>
+        <div class="content3">
+            <ul>
+                <li>
+                    <p>
+                        Expert-Approved Content: Our <a name="solution">website</a> collaborates with experienced veterinarians and <br> pet care specialists, ensuring that all information provided is reliable and up-to-date. Pet owners can confidently rely on PetConnect’s vet-approved guidance
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Tailored Diet Recommendations: With PetConnect's balanced diet section, users can select<br> their pet type, be it a dog, cat, bird, or small animal, and receive customized nutritional recommendations, promoting the overall well-being of their pets.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find Pet Shops Near You: Through location-based services, PetConnect helps users easily<br> locate reputable pet shops in their vicinity. This feature saves time and ensures access to high-quality pet products and services.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image4">
+            <img src="img4.jpg" class="scope">
+        </div>
+        <div class="content4">
+            <ul>
+                <li>
+                    <p>
+                        Nutrition Guidance: Offering customized <a name="scope">diet</a> recommendations tailored to different pet breeds, ages, and health conditions, promoting optimal health and longevity.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Training Tools and Techniques: Presenting effective training methods and tools to strengthen the bond between pet and their owners, ensuring a happy and well-behaved furry friend.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="content5">
+            <ul>
+                <li>
+                    <p>
+                        Social Community: Establishing a lively community where pet enthusiasts can share experiences, seek advice, and build meaningful connections with fellow pet lovers
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Health and Wellness Information: Providing valuable resources on identifying common health issues, preventive measures, and when to seek professional veterinary care
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <a href="#top" class="button-top">GO back to Top</a>
     <footer>
         <p class="right">Copyright &copy; | Team PetConnect</p>
     </footer>

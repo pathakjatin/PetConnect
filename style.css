@@ -77,8 +77,8 @@ button:hover::after{
     box-sizing: border-box;
     padding: 0;
     margin: 50px;
-    width: 290px;
-    height: 510px;
+    width: 320px;
+    height: 634px;
     background-color: #659DBD;
     border-radius: 20px;
 }
@@ -182,8 +182,6 @@ footer a{
     color: white;
 }
 .z{
-    height: 800px;
-    width: 1415px;
     bottom: 800px;
     position: relative;
     left: 55px;

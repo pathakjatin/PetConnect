@@ -4,8 +4,8 @@
 }
 body{
     /* background: linear-gradient(30deg,  #0ba9a9 0%, #00ffff 40% ,#51d7d7 100%); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
+    margin-bottom: 0;
 }
 #text{
     position: relative;
@@ -247,7 +247,7 @@ body{
     top: -94vh;
     /* background-color: #333; */
     color: #BAB86C;
-    /* height: 360vh; */
+    height: 275vh; 
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -260,4 +260,16 @@ body{
 .foodpara{
     font-size: 3.0vh;
     padding: 35px;
+}
+.p{
+    margin-bottom: 20px;
+}
+footer {
+    text-align: right;
+    background-color: #333;
+    height: 10vh;
+    color: #BAB86C;
+    padding: 26px;
+    overflow: hidden;
+    font-size: 3.7vh;
 }

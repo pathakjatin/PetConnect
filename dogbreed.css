@@ -25,15 +25,11 @@ nav a {
     height: 60px;
     background-color: #659DBD;
     border-radius: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3%;
 }
 
-.content{
-    
-    
-    justify-content: center;
-    
-    
-}
 
 
 
@@ -44,7 +40,7 @@ nav a {
     margin: 20px;
     width: 290px;
     height: 250px;
-    background-color: #659DBD;
+    background-color: #493C32;
     border-radius: 20px;
 }
 .container1{
@@ -55,7 +51,7 @@ nav a {
 .labrador-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("dog.jpg");
+    background-image: url("labrador.jpg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -65,13 +61,13 @@ nav a {
     margin: 20px;
     width: 290px;
     height: 250px;
-    background-color: #659DBD;
+    background-color: #493C32;
     border-radius: 20px;
 }
 .dalmatian-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("dog.jpg");
+    background-image: url("dalmatian.jpeg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -81,13 +77,13 @@ nav a {
     margin: 20px;
     width: 290px;
     height: 250px;
-    background-color: #659DBD;
+    background-color:#493C32;
     border-radius: 20px;
 }
 .doberman-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("dog.jpg");
+    background-image: url("doberman.jpeg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -107,17 +103,17 @@ nav a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: x-large;
-    color: #BAB86C;
+    color: 	#B6977D;
 }
 .header {
     margin-top: 2%;
     padding: 26px;
-    background-color:white;
+    background-color:#DBCBBE;
     opacity: 90%;
 }
 body{
     background-color: #659DBD;
-    background-image: url("forest.jpg");
+    background-image: url("dog\ print.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -133,7 +129,7 @@ footer a{
 }
 body{
     background-color: #659DBD;
-    background-image: url("forest.jpg");
+    background-image: url("dog\ print.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -142,11 +138,32 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: x-large;
-    color: #BAB86C;
+    color:	#493C32;
 }
 .header {
     margin-top: 2%;
     padding: 26px;
-    background-color:white;
+    background-color:#927964;
     opacity: 90%;
+}
+.labrador:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.dalmatian:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.doberman:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
 }

@@ -1,0 +1,223 @@
+.navigate{
+    margin-top: 3%;
+    padding: 6px;
+    background-color:black;
+    opacity: 90%;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: white;
+} 
+
+.text1{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: #659DBD;
+    border-radius: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+
+
+
+.labrador{
+    box-sizing: border-box;
+    padding: 0;
+     margin: 50px;
+    width: 290px;
+    height: 510px;
+    background-color: #493C32;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.labrador-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("labrador.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.dalmatian{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 50px;
+    width: 290px;
+    height: 510px;
+    background-color: #493C32;
+    border-radius: 20px;
+    text-align: center;
+}
+.dalmatian-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("dalmatian.jpeg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.doberman{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 50px;
+    width: 290px;
+    height: 510px;
+    background-color:#493C32;
+    border-radius: 20px;
+    text-align: center;
+}
+.doberman-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("doberman.jpeg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+.doberman h2{
+    text-align: center;
+}
+.dalmatian h2{
+    text-align: center;
+}
+.labrador h2{
+    text-align: center;
+}
+.text1 h2{
+    text-align: center;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: 	#B6977D;
+}
+.header {
+    margin-top: 2%;
+    padding: 26px;
+    background-color:#DBCBBE;
+    opacity: 90%;
+}
+body{
+    background-color: #659DBD;
+    background-image: url("dog\ print.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+    float: left;
+    color: white;
+}
+body{
+    background-color: #659DBD;
+    background-image: url("dog\ print.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color:	#493C32;
+}
+.header {
+    margin-top: 2%;
+    padding: 26px;
+    background-color:#927964;
+    opacity: 90%;
+}
+.labrador:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.dalmatian:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.doberman:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+button{
+    background-color: #ecfd00;
+    border: 0px;
+}
+.labrador p{
+    padding: 10px;
+}
+.dalmatian p{
+    padding: 10px;
+}
+.doberman p{
+    padding: 10px;
+}
+.labrador h2{
+    text-align: center;
+}
+.dalmatian h2{
+    text-align: center;
+}
+.doberman h2{
+    text-align: center;
+}
+.labrador a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.dalmatian a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.doberman a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}

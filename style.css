@@ -1,88 +1,62 @@
 body{
     background-color: #659DBD;
-    background-image: url("forest.jpg");
+    background-image: url("pattern.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    position: absolute;
 }
 .title{
-    font-family: 'Croissant One', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: 30px;
-    color: #BAB86C;
-    /* color: transparent;
-    background-image: url("C:\Users\HP\Desktop\PetConnect\dog.html");
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text; */
+    font-size: x-large;
+    color: #401C66;
 }
-/* h1{
-    color: transparent;
-    background-image: url("C:\Users\HP\Desktop\PetConnect\dog.html");
-    background-size: cover;
-    background-position: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-} */
 .header {
     margin-top: 2%;
-    padding: 20px;
+    padding: 26px;
     background-color:white;
     opacity: 90%;
 }
-button li a{
-    color: rgb(169, 158, 0);
-    font-family: 'Skranji', cursive;;
-}
-button{
-    background-color: #ecfd00;
-    border: 0px;
-}
-button::after{
-    content: "";
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: rgb(53, 192, 53);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
-}
-button:hover::after{
-    transform: scaleX(1);
-}
 .text1{
-    color: rgb(224, 239, 12);
-    font-size: 6vh;
-    top: 370px;
-    left: 600px;
-    position: absolute;
-    font-weight: 100;
-    z-index: 55;
-    display: inline-block;
-    top: 45vh;
-    justify-content: center;
-    left: 30vw;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3%;
 }
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    top: 55px;
-    position: absolute;
-    left: 8vw;
 }
-.card{
+.dog{
     box-sizing: border-box;
     padding: 0;
-    margin: 50px;
-    width: 320px;
-    height: 634px;
-    background-color: #659DBD;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
     border-radius: 20px;
 }
-
+.cat{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
+    border-radius: 20px;
+}
+.fish{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
+    border-radius: 20px;
+}
 .dog-image{
     height: 190px;
     margin-bottom: 15px;
@@ -104,13 +78,25 @@ button:hover::after{
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
-.card p{
+.dog p{
     padding: 10px;
 }
-.card h2{
+.cat p{
+    padding: 10px;
+}
+.fish p{
+    padding: 10px;
+}
+.dog h2{
     text-align: center;
 }
-.card a{
+.cat h2{
+    text-align: center;
+}
+.fish h2{
+    text-align: center;
+}
+.dog a{
     background-color: black;
     color: white;
     text-decoration: none;
@@ -119,8 +105,39 @@ button:hover::after{
     text-align: center;
     margin: 2px 60px;
 }
-
-.card:hover{
+.cat a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.fish a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.dog:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.cat:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.fish:hover{
     background-color: rgb(62, 62, 62);
     color: white;
     cursor: pointer;
@@ -143,36 +160,25 @@ button:hover::after{
     margin-top: 2%;
     margin-right: 8%;
 }
-.content{
-    padding-top: 5px;
-    height: 890px;
-    width: 1515px;
-    position: relative;
-    background-image: url("forest.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    filter: blur(2px);
-    z-index: 25;
-    border: 3px solid black;
-    border-radius: 28px;
+
+.navigate{
+    margin-top: 3%;
+    padding: 6px;
+    background-color:30154D;
+    opacity: 90%;
 }
-.navbar{
-    background-color: rgb(236, 253, 0);
-    height: 12vh;
-    font-family: 'Skranji', cursive;
-    /* color:#BAB86C; */
+nav {
+    background-color: #333;
+    overflow: hidden;
 }
-.navbar ul li{
-    color:#BAB86C;
-    padding-top: 3.8vh;
-    display: inline-block;
-}
-.navbar ul li a{
+nav a {
     text-decoration: none;
-    padding: 18px;
-    font-size: 29px;
-}
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: white;
+} 
 footer a{
     text-decoration: none;
     padding: 25px;
@@ -180,17 +186,4 @@ footer a{
     font-size: large;
     float: left;
     color: white;
-}
-.z{
-    bottom: 800px;
-    position: relative;
-    left: 55px;
-    z-index: 50;
-}
-.demo{
-    background-color: #333;
-    color: white;
-    font-size: large;
-    position: absolute;
-    top: 1280px;
 }

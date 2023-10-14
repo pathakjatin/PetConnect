@@ -8,17 +8,17 @@ body{
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: x-large;
+    font-size: 45px;
     color: #401C66;
 }
 .header {
     margin-top: 2%;
-    padding: 26px;
+    padding: 5px;
     background-color:white;
     opacity: 90%;
 }
 .text1{
-    font-size: x-large;
+    font-size: 40px;
     text-align: center;
     margin-top: 3%;
 }
@@ -156,6 +156,7 @@ body{
     font-size: large;
 }
 .right{
+    font-size: 20px;
     text-align: right;
     margin-top: 2%;
     margin-right: 8%;
@@ -163,9 +164,12 @@ body{
 
 .navigate{
     margin-top: 3%;
-    padding: 6px;
-    background-color:30154D;
+    padding: 5px 6px 4px ;
+    background-color:#30154D;
     opacity: 90%;
+}
+.navigate ul a{
+    font-size: 25px;
 }
 nav {
     background-color: #333;
@@ -186,4 +190,26 @@ footer a{
     font-size: large;
     float: left;
     color: white;
+}
+button{
+    background-color: #30154D;
+    padding: 0px 8px;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    background-color: #659DBD;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    
+}
+button:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
 }

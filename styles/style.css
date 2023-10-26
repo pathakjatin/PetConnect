@@ -1,0 +1,215 @@
+body{
+    background-color: #659DBD;
+    background-image: url("/images/pattern.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #401C66;
+}
+.header {
+    margin-top: 2%;
+    padding: 5px;
+    background-color:white;
+    opacity: 90%;
+}
+.text1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dog{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
+    border-radius: 20px;
+}
+.cat{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
+    border-radius: 20px;
+}
+.fish{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: #634880;
+    ;
+    border-radius: 20px;
+}
+.dog-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("/images/dog.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cat-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("/images/cat.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.fish-image{
+    height: 190px;
+    margin-bottom: 15px;
+    background-image: url("/images/fish.jpeg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.dog p{
+    padding: 10px;
+}
+.cat p{
+    padding: 10px;
+}
+.fish p{
+    padding: 10px;
+}
+.dog h2{
+    text-align: center;
+}
+.cat h2{
+    text-align: center;
+}
+.fish h2{
+    text-align: center;
+}
+.dog a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.cat a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.fish a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 2px 60px;
+}
+.dog:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.cat:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.fish:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.divider2{
+    color: #DAAD86;
+}
+.center{
+    text-align: right;
+    background-color: #333;
+    padding: 26px;
+    overflow: hidden;
+    border-radius: 28px;
+    font-size: large;
+}
+.right{
+    font-size: 20px;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 8%;
+}
+
+.navigate{
+    margin-top: 3%;
+    padding: 5px 6px 4px ;
+    background-color:#30154D;
+    opacity: 90%;
+}
+.navigate ul a{
+    font-size: 25px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: white;
+} 
+footer a{
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+    float: left;
+    color: white;
+}
+button{
+    background-color: #30154D;
+    padding: 0px 8px;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    background-color: #659DBD;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    
+}
+button:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+}

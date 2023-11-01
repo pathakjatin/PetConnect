@@ -1,6 +1,7 @@
 <?php
-require 'config.php';
+include ("config.php");
 if(isset($_POST["submit"])){
+    $home="index.html";
     $usernameemail = $_POST["usernameemail"];
     $password = $_POST["password"];
     $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE username ='$usernameemail' OR email='$usernameemail'");
@@ -9,7 +10,7 @@ if(isset($_POST["submit"])){
         if($password==$row["password"]){
             $_SESSION["login"]=true;
             $_SESSION["id"]=$row["id"];
-            header("Location: index.php");
+            header("Location: $home");
         }
         else{
             echo

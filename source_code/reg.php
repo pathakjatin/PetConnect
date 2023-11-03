@@ -1,3 +1,31 @@
+<?php
+include("config.php");
+if(isset($_POST["submit"])){
+$name = $_POST["name"];
+$username = $_POST["username"]; 
+$email = $_POST["email"];
+$password = $_POST["password"];
+$confirmpassword = $_POST["confirmpassword"];
+$duplicate = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
+if(mysqli_num_rows($duplicate) > 0){ 
+echo
+"<script> alert('Username or Email Has Already Taken'); </script>";
+}
+else{
+if($password == $confirmpassword){
+$query = "INSERT INTO tb_user VALUES('','$name', '$username', '$email', '$password')";
+mysqli_query($conn, $query);
+echo
+"<script> alert('Registration Successful'); </script>";
+header('location:login.php');
+}
+else{
+echo
+"<script> alert('Password Does Not Match'); </script>";
+}
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -5,8 +33,7 @@
   <title>Registration form</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel="stylesheet" href="/styles/style-reglog.css">
-<link rel="stylesheet" href="/backend/reg.php">
+<link rel="stylesheet" href="style-reglog.css">
 
 </head>
 <body>
@@ -71,7 +98,7 @@
       </div>
     </div>
   </div>
-  <form class="" action="/backend/reg.php" method="post" autocomplete="off">
+  <form class="" action="reg.php" method="post" autocomplete="off">
   <div class="login">
     <label>
       <div class="fa fa-phone"></div>
@@ -118,6 +145,6 @@
   </div>
   <div class="footer">Random text</div>
 </div><!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script><script  src="/javascript/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script><script  src="script.js"></script>
 </body>
 </html>

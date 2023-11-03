@@ -1,6 +1,6 @@
 body{
     background-color: #659DBD;
-    background-image: url("/images/pattern.jpg");
+    background-image: url('pattern.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -60,21 +60,21 @@ body{
 .dog-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("/images/dog.jpg");
+    background-image: url("dog.jpg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 .cat-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("/images/cat.jpg");
+    background-image: url("cat.jpg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 .fish-image{
     height: 190px;
     margin-bottom: 15px;
-    background-image: url("/images/fish.jpeg");
+    background-image: url("fish.jpeg");
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }

@@ -4,10 +4,12 @@
 }
 body{
     /* background: linear-gradient(30deg,  #0ba9a9 0%, #00ffff 40% ,#51d7d7 100%); */
-    background-image: url("pattern.jpg");
-    margin-bottom: 0;
+    background-image: url('forest3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
-#text{
+    #text{
     position: relative;
     left: 5vw;
     /* padding: 6.5vh 0vh 0vh 6vw; */

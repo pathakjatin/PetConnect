@@ -1,4 +1,7 @@
 <?php
+$success=0;
+$user=0;
+$pass=0;
 include("config.php");
 if (isset($_POST["submit"])) {
   $email = $_POST["email"];
@@ -9,18 +12,20 @@ if (isset($_POST["submit"])) {
   $hash = password_hash($password, PASSWORD_DEFAULT);
   $duplicate = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
   if (mysqli_num_rows($duplicate) > 0) {
-    echo
-    "<script> alert('Username or Email Has Already Taken'); </script>";
+    // echo
+    // "<script> alert('Username or Email Has Already Taken'); </script>";
+    $user=1;
   } else {
     if ($password == $confirmpassword) {
       $query = "INSERT INTO tb_user VALUES('','$name', '$username', '$email', '$hash')";
       mysqli_query($conn, $query);
-      echo
-      "<script> alert('Registration Successful'); </script>";
-      header('location:login.php');
+      // echo
+      // "<script> alert('Registration Successful'); </script>";
+      $success= 1;
+      // header('location:login.php');
     } else {
       echo
-      "<script> alert('Password Does Not Match'); </script>";
+      $pass=1;
     }
   }
 }
@@ -33,11 +38,47 @@ if (isset($_POST["submit"])) {
   <title>Registration form</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="style-reglog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="style-reglog.css">
+<style>
+    .login{
+    color: #243946;
+    padding: 10px;
+    text-align: center;
+  }
+  .login a{
+    color: #243946;
+    text-decoration:underline;
+  }
+</style>
 </head>
 
 <body>
+  <?php
+  if($user){
+    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>OH NO SORRY!</strong> User already exists!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  }
+  ?>
+  <?php
+  if($success){
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Registered Successfully!</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  }
+  ?>
+    <?php
+  if($pass){
+    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Password does not match!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  }
+  ?>
   <!-- partial:index.partial.html -->
   <div class="center">
     <div class="ear ear--left"></div>
@@ -130,6 +171,9 @@ if (isset($_POST["submit"])) {
 
         </label>
         <button class="login-button" type="submit" name="submit">Register</button>
+        <div class="login">
+        <h6>Already a user? <a href="login.php">Login!</a></h6>
+        </div>
     </form>
 
   </div>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish</title>
+    <style>
+        body{
+            background-color: #659DBD;
+            background-image: url('fishbg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #06294e;
+}
+header {
+    margin-top: 2%;
+    padding: 5px;
+}
+.navigate{
+    margin-top: 3%;
+    padding: 5px 6px 4px ;
+    background-color:#b2e5d4;
+    opacity: 90%;
+}
+.navigate ul a{
+    font-size: 25px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: #06294e;
+} 
+button{
+    background-color: #b2e5d4;
+    padding: 0px 8px;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    background-color: #659DBD;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    
+}
+button:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+}
+.container{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    background-color: #b2e5d4;
+    color: #06294e;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 0px 0px 0px 15px;
+    font-size: 30px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    text-align: right;
+    background-color: #b2e5d4;
+    padding: 26px;
+    overflow: hidden;
+    border-radius: 28px;
+    font-size: large;
+}
+.right{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 8%;
+}
+    </style>
+</head>
+<body>
+        <div class="header">
+        <header class="title">
+            <h1>Gold Fish</h1>
+        </header>
+    </div>
+    <nav class="navigate">
+        <ul>
+            <button><a href="index.html">HOME</a></button>
+            <button><a href="dog1.html">Select Dog breed</a></button>
+            <button><a href="cat.html">Select Cat breed</a></button>
+            <button><a href="logout.php">Logout</a></button>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="fish">
+            <img src="goldfish.png" alt="goldfish" width="300px" height="300px">
+        </div>
+        <div class="content">
+            <div class="content-container">
+                <div class="heading">
+                    <h1>What should I feed my pet goldfish?</h1>
+                </div>
+                <div class="fish-diet">
+                    <p>A varied diet will maximise the health of your goldfish (Carassius auratus). A mixture of specialised goldfish flake and granules are a good staple diet. Ideally supplement this with live brine shrimp and a mixture of frozen brine shrimp, daphnia and veggie mix. The diet can also be supplemented by scalded peas, small invertebrates and duck weed. The goldfish diet should contain a high carbohydrate level. Any freeze-dried food should be soaked first to avoid digestive upsets.</p><br>
+                    <p>Feed 2-3 times daily. It is important to avoid overfeeding goldfish as this can cause indigestion and/or contaminate the tank. In terms of the amount to feed, a good rule of thumb is to only feed an amount that the goldfish can consume in under two minutes or only feed as much as the size of the goldfish’s eye.</p><br>
+                    <p>Goldfish feed at all levels of the aquarium and will accept most foods. Small floating pellets are best in terms of keeping the tank clean as excess food can be easily removed. The smaller size pellets also ensure that all fish receive their share of the food.</p><br>
+                    <p>Mammalian fats (e.g. from beef heart, meat, offal) are poorly digested in fish, especially if the water temperature falls below 15 degrees celcius at any time. All fat must be trimmed off and this type off of food should not be used exclusively.</p><br>
+                    <p>Feeding should be limited when water temperatures fall below 8 degrees Celsius because, being homoeothermic, goldfish are less able to digest the food at these lower temperatures.</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="center">
+        <p class="right">Copyright &copy; | Team PetConnect</p>
+    </footer>
+</body>
+</html>

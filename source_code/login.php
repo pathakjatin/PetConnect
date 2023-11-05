@@ -4,7 +4,7 @@ $login=0;
 $invalid=0;
 $user=0;
 if(isset($_POST["submit"])){
-    $home="index.html";
+    $home="home.html";
     $usernameemail = $_POST["usernameemail"];
     $password = $_POST["password"];
     $sql="SELECT * FROM tb_user WHERE username ='$usernameemail' OR email='$usernameemail'";
@@ -143,7 +143,7 @@ if(isset($_POST["submit"])){
     </label>
     <button class="login-button" type="submit" name="submit">Login</button>
     <div class="reg">
-      <h6>Not a user? <a href="reg.php">Register Here</a></h6>
+      <h6>Not a user? <a href="index.php">Register Here</a></h6>
     </div>
   </div>
 </form>

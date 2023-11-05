@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <style>
+        body{
+            background-color: #659DBD;
+            background-image: url('siamesebg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+header {
+    margin-top: 2%;
+    padding: 5px;
+}
+.navigate{
+    margin-top: 3%;
+    padding: 5px 6px 4px ;
+    background-color:rgb(204, 155, 82);
+    opacity: 90%;
+}
+.navigate ul a{
+    font-size: 25px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: rgb(0, 0, 0);
+} 
+button{
+    background-color:rgb(204, 155, 82);
+    padding: 0px 8px;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    background-color: #5e4401;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    
+}
+button:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+}
+.container{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    background-color: rgb(229, 192, 100);
+    color: black;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 0px 0px 0px 15px;
+    font-size: 30px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    text-align: right;
+    background-color: rgb(229, 192, 100);
+    padding: 26px;
+    overflow: hidden;
+    border-radius: 28px;
+    font-size: large;
+}
+.right{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 8%;
+}
+    </style>
+</head>
+<body>
+        <div class="header">
+        <header class="title">
+            <h1>Siamese</h1>
+        </header>
+    </div>
+    <nav class="navigate">
+        <ul>
+            <button><a href="index.html">HOME</a></button>
+            <button><a href="dog1.html">Select Dog breed</a></button>
+            <button><a href="fish.html">Select fish </a></button>
+            <button><a href="logout.php">Logout</a></button>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="cat">
+            <img src="siamese.jpg" alt="Persian" width="300px" height="300px">
+        </div>
+        <div class="content">
+            <div class="content-container">
+                <div class="heading">
+                    <h1>Diet Plan for Siamese Cats</h1>
+                </div>
+                <div class="cat">
+                    <p><h2>1. High-Protein Diet:</h2>
+                        Siamese cats are more active and require a higher protein content in their diet to maintain muscle mass.
+                        Look for cat foods with animal-based protein sources like chicken, fish, or turkey.</p><br>
+                    <p><h2>2. Controlled Fat Content:</h2>
+                        Maintain a moderate fat content in their diet to support their high activity levels.
+                        Avoid foods with excessive fat, which can lead to weight gain
+                        </p><br>
+                    <p><h2>3. Grain-Free or Limited Grains:</h2>
+                        Some Siamese cats may have grain sensitivities, so consider grain-free or limited-grain options.
+                        Opt for cat foods that are free from fillers like corn, wheat, and soy.
+                        </p><br>
+                    <p><h2>4. Regular Mealtimes:</h2>                       
+                        Maintain a consistent feeding schedule to provide structure for your Siamese cat.
+                        Feeding at the same times each day can help with weight control.</p><br>
+                    <p><h2>5. Weight Management:</h2>
+                        Siamese cats often have sensitive skin and coat. Look for foods rich in omega-3 fatty acids to maintain a glossy coat and healthy skin.
+                        Siamese cats can be prone to obesity, so monitor their weight and adjust portions as needed.
+                        Consult your vet if your cat's weight needs management.</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="center">
+        <p class="right">Copyright &copy; | Team PetConnect</p>
+    </footer>
+</body>
+</html>

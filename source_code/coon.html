@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <style>
+        body{
+            background-color: #659DBD;
+            background-image: url('catprint3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+header {
+    margin-top: 2%;
+    padding: 5px;
+}
+.navigate{
+    margin-top: 3%;
+    padding: 5px 6px 4px ;
+    background-color:rgb(204, 155, 82);
+    opacity: 90%;
+}
+.navigate ul a{
+    font-size: 25px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    float: left;
+    color: rgb(0, 0, 0);
+} 
+button{
+    background-color:rgb(204, 155, 82);
+    padding: 0px 8px;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    background-color: #5e4401;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    
+}
+button:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+}
+.container{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    background-color: rgb(229, 192, 100);
+    color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 0px 0px 0px 15px;
+    font-size: 30px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    text-align: right;
+    background-color: rgb(229, 192, 100);
+    padding: 26px;
+    overflow: hidden;
+    border-radius: 28px;
+    font-size: large;
+}
+.right{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 8%;
+}
+.cat-coon{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 30px 0px;
+}
+.coon2 img{
+    display: flex;
+    position: relative;
+    left: 35%;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width:750px){
+    .container{
+        flex-direction: column;
+    }
+    img .coon1{
+        height: 400px;
+        width: 400px;
+    }
+}
+    </style>
+</head>
+<body>
+        <div class="header">
+        <header class="title">
+            <h1>Maine Coon</h1>
+        </header>
+    </div>
+    <nav class="navigate">
+        <ul>
+            <button><a href="index.html">HOME</a></button>
+            <button><a href="cat.html">Select Cat breed</a></button>
+            <button><a href="logout.php">Logout</a></button>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="cat-coon">
+            <div class="coon1"><img src="coon.png" alt="Maine Coon " width="300px" height="300px"></div>
+        </div>
+        <div class="content">
+            <div class="content-container">
+                <div class="heading">
+                    <h1>Diet Plan for Siamese Cats</h1>
+                </div>
+                <div class="cat">
+                    <p><h2>Some important points</h2>
+                        <ul>
+                            <li><p>The Maine Coon cat is a domestic cat who at times has been used to control rodent populations on farms and homesteads.</p></li>
+                            <li><p>Maine Coons cats need between 190-875 calories a day to thrive.</p></li>
+                            <li><p>The best dry or wet cat foods for Maine Coons would contain chicken or fish.</p></li>
+                        </ul>
+                    </p><br>
+                    <p>
+                        Maine Coon cats are large domesticated cats native to North America. These gentle giants are playful, loyal, and loving to their owners. Maine Coons need lots of protein in their diets to fuel their energetic, kitten-like personalities. 
+                        Although often mistaken for a wild cat, the Maine Coon is a domestic cat sometimes used to tame vermin on homesteads.  
+                        Are you wondering what Maine Coon cats eat? Find out the best food for your Maine Coon, how much it eats, and what it might find on its own. </p><br>
+                        <div class="coon2"><img src="coon2.png" alt="Maine Coon" width="350px" height="300px"></div>
+                    <p><h2>What Do Maine Coon Cats Eat?</h2><br>
+                        <h3>Maine Coon cats eat a combination of meat like chicken and fish, dry cat food, and wet cat food.</h3>
+                        Main Coons are large and energetic, so they need plenty of protein to fuel their play. While they don’t need a specialized diet per se, they need to consume raw or cooked meat. <br> <br>
+                        While these cats can get all of their dietary needs through dry and wet cat food, some owners opt for a raw food diet combined with supplements. 
+                        Stick with high-protein, low-fat meat like poultry, fish, and rabbit. The best raw food diet for Maine Coon cats contains 85% muscle meat, organs, and ground bones. If you choose this diet for your cat, consider adding vitamins and supplements to keep your cat healthy. <br> <br>
+                        <b>Veterinary studies</b> confirmed that omega-3 fatty acid supplements help treat inflammatory bowel disease in Maine Coons. 
+                        </p><br><br>
+                    <p><h2>A Complete List of Foods Maine Coon Cats Eat</h2>
+                        <p>Check out this list of the most common foods Maine Coon Cats eat:
+                            <ul>
+                                <li><p>Dry cat food</p></li>
+                                <li><p>Wet cat food</p></li>
+                                <li><p>Cat treats</p></li>
+                                <li><p>Chicken</p></li>
+                                <li><p>Fish</p></li>
+                                <li><p>Rabbit</p></li>
+                                <li><p>Small rodents</p></li>
+                                <li><p>Birds</p></li>
+                                <li><p>Reptiles</p></li>
+                                <li><p>Insects</p></li>
+                                <li><p>Small mammals</p></li>
+                            </ul>
+                        </p>
+                        </p><br>
+                        <div class="coon2"><img src="coon3.jpg" alt="Maine Coon" width="400px" height="450px"></div>
+                    <p>                      
+                        Most people keep Maine Coon cats as pets and feed them a diet like regular domestic cats. This is perfectly acceptable as long as their daily protein intake is 35% to 50%. When picking out cat food, ensure the first ingredient is protein, like fish or chicken. <br><br> 
+                        Choose high-quality cat foods that contain fewer carbs and moderate amounts of fat. Maine Coons are predisposed to adult diabetes and obesity, so ingredients like grains and corn should be limited. <br><br>
+                        You can give Maine Coons dry cat food daily and wet cat food two to three times a week as their primary diet. Also, veterinary studies confirmed that omega-3 fatty acid supplements help treat inflammatory bowel disease in Maine Coons.</p><br>
+                    <p><h2>What Can Maine Coons Not Eat?</h2>
+                        Like all domestic cats, Maine Coons must steer clear of certain types of food. Eating the wrong foods can cause digestion problems, high temperatures, abdominal pain, and increased thirst. It’s rare but possible for Maine Coons to suffer from seizures and even death when given the wrong food in high quantities. 
+                        <p>Do not feed your Maine Coon:
+                            <ul>
+                                <li><p>Chocolate</p></li>
+                                <li><p>Dairy products like milk</p></li>
+                                <li><p>Alcohol</p></li>
+                                <li><p>Candy and other sugary products</p></li>
+                                <li><p>Large amounts of tuna fish</p></li>
+                                <li><p>Grapes and raisins</p></li>
+                                <li><p>Onions and garlic</p></li>
+                                <li><p>Mushrooms</p></li>
+                                <li><p>Caffeinated drinks</p></li>
+                                <li><p>Dog food</p></li>
+                                <li><p>Human medicines</p></li>
+                            </ul>
+                        </p>
+                    </p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="center">
+        <p class="right">Copyright &copy; | Team PetConnect</p>
+    </footer>
+</body>
+</html>

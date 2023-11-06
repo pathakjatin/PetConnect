@@ -140,7 +140,7 @@ if (isset($_POST["submit"])) {
         </div>
       </div>
     </div>
-    <form class="" action="reg.php" method="post" autocomplete="off">
+    <form class="" action="index.php" method="post" autocomplete="off">
       <div class="login">
         <label>
           <div class="fa fa-phone"></div>
